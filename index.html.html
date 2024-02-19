@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="emc.png">
+    <title>
+        Log in 360
+    </title>
+    <style>
+        *{
+            cursor: pointer;
+        }
+        @media screen and (min-width:500px){
+            html{
+                background: url(images1.jpg);
+            }
+        }
+        html{
+            background: url(1233.jpg)fixed,no-repeat;
+            display: flex;
+            flex-shrink: initial;
+        }
+        body{
+            height:100px;
+            overflow-x: hidden;
+            margin:0;
+            padding:0;
+          
+        }
+        .one{
+            width:950px;
+            height:300px;
+            border:2px solid blue;
+            margin-top:60px;
+            box-shadow: 4px 4px 5px black;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left:6px;
+        }
+        .two{
+            font-size:xx-large;
+            position:relative;
+            bottom:320px;
+            color:black;
+            text-shadow:1px 1.5px 2px red;
+            padding-left:20px;
+        }
+        .three{
+            position:relative;
+            bottom:315px;
+            background-image:linear-gradient(to top left,rgb(130, 0, 117),aqua)
+        }
+        .four{
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            width:140px;
+            height:40px;
+            position:relative;
+            left:800px;
+            background-color: rgba(255, 132, 0, 0.966);
+        }
+        .five{
+            background-color: rgba(0, 140, 255, 0.9);
+            width:400px;
+            height:200px;
+            border-radius: 5px;
+            padding: 10px;
+            color:white;
+            box-shadow: -9px -6px 15px 2px black;
+            position: relative;
+            bottom:320px;
+            left:10px;
+        }
+        .eight{
+            font-size:larger;
+        }
+        .nine{
+            background-color: red;
+            width:400px;
+            height:200px;
+            border-radius: 5px;
+            padding: 10px;
+            color:white;
+            position:relative;
+            left:470px;
+            bottom:500px;
+            box-shadow:9px 6px 10px 2px black;
+        }
+        .ten{
+            background-color:green;
+            width:400px;
+            height:200px;
+            border-radius: 5px;
+            padding:10px;
+            color:white;
+            box-shadow: -9px -6px 15px 2px black;
+            position: relative;
+            bottom:500px;
+            left:30px; 
+        }
+        .eleven{
+            background-color:slateblue;
+            width:400px;
+            height:200px;
+            border-radius: 5px;
+            padding: 10px;
+            color:white;
+            position:relative;
+            left:500px;
+            bottom:680px;
+            box-shadow:9px 6px 15px 2px black;
+        }
+        #item1{
+            font-size: x-large;
+            position: relative;
+            bottom: 330px;
+            color:black;
+            text-shadow:1px 2px 4px  blue;
+            padding-left:20px;
+        }
+        #item2{
+            width:220px;
+            padding:2px;
+        }
+        #item3{
+            width:250px;
+            position: relative;
+            bottom: 582px;
+            right:280px;
+            border:2px solid black;
+            background-color:darkorange;
+            border-radius: 10px;
+        }
+        #item3:hover,#item4:hover,#item5:hover{
+            text-shadow: 2px 1px 2px red;
+        }
+        #item4{
+            width:260px;
+            height: 77px;
+            position: relative;
+            bottom: 660px;
+            border:2px solid black;
+            background-color: yellow;
+            border-radius: 10px;
+        }
+        #item5{
+            width:260px;
+            height: 77px;
+            position: relative;
+            bottom: 760px;
+            border:2px solid black;
+            background-color:green;
+            border-radius: 10px;
+            position:relative;
+            left:290px;
+            bottom:740px;
+        }
+        #item6{
+            width:50px;
+            color:orangered;
+            position: relative;
+            right:440px;
+            bottom:380px;
+            width:90px;
+        }
+        #item7{
+            color:red;
+            position:relative;
+            top:20px;
+            right:140px;
+        }
+        #item8{
+            position: relative;
+            bottom:600px;
+            width:200px;
+            gap:200px;
+            width:270px;
+            margin-bottom: -20px;
+        }
+        i{
+            position: relative;
+            bottom: 11px;
+            left:930px;
+        }
+        #logo{
+            width:1100px;
+            height:50px;
+            /* background-color: rgb(0, 234, 255); */
+            background-image: linear-gradient(to right,blue,red);
+            z-index:1;
+            position: sticky;
+            top:0px;
+            position: fixed;
+            top:0px;
+        }
+        button{
+            padding:5px;
+            width:90px;
+            height:40px;
+            background-color:yellow;
+            position: relative;
+            bottom: 330px;
+            left:20px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color:aqua;
+            transition: ease-in;
+            transform: scale(1.1);
+        }
+        .five:hover,.nine:hover,.ten:hover,.eleven:hover,.one:hover{
+            transform: scale(1.030);
+        }
+        #search{
+            position: relative;
+            left:480px;
+            bottom:85px;
+            width:180px;
+            height:23px;
+            border-radius:3px;
+            font-size:16px;  
+            padding: 10px;
+        }
+        #search:hover{
+            color:black;
+            font-size: 13px;
+        }
+        h4{
+            position: relative;
+            bottom:300px;
+        }
+        p{
+            position:relative;
+            bottom:315px;
+            font-size:larger;
+        }
+        hr{
+            border:2px solid blue;
+            position: relative;
+            bottom: 540px;
+            width:1000px;
+            box-shadow: 3px 3px red;
+        }
+        #pto1{
+            position:relative;
+            bottom: 750px;
+            left:25px;
+            animation-iteration-count: infinite;
+        }
+        #thank{
+            text-shadow: 2px 2px 2px blue;
+            transform: translate(30px,-450px);
+        }
+        .cloud{
+            transform:translateY(-690px);
+            text-shadow: 2px 2px 4px orange;
+            background-image:linear-gradient(to top left,rgb(207, 130, 238),yellow);
+            text-shadow: 3px 1px 2px blue;
+        }
+        .cloud:hover{
+            font-style:oblique;
+            font-size:xx-large;
+        }
+        .para1{
+            transform: translateY(-380px);
+            font-style: italic;
+        }
+        .web{
+            position: relative;
+            bottom: 740px;
+            background-image: linear-gradient(to top right,rgba(76, 0, 130, 0.674) 50%,rgba(0, 115, 128, 0.68) 50%);
+            text-shadow: 3px 1px 2px red;
+            margin-top:12px;
+        }
+        .web:hover{
+            font-size:29px;
+        }
+        #web{
+            transform: translateY(-780px);
+        }
+        .para2{
+            transform: translateY(-430px);
+            font-style: italic;
+        }
+        #agular{
+            border:2px solid blue;
+            box-shadow: 2px 2px 1px 4px yellow;
+            transform: translateY(-780px);
+            display:flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        #agulars,#pythan{
+            border:2px solid blue;
+            box-shadow: 2px 2px 2px 4px rgb(32, 218, 41);
+            transform: translateY(-750px);
+            display:flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        #pythan:hover,#agular:hover,#agulars:hover{
+            background-color:black;
+            transition: ease-in-out;
+            transition-duration: 1s;
+        }
+        .python{
+            transform: translateY(-770px);
+            background-image: linear-gradient(to top left,rgba(255, 68, 0, 0.995),rgb(255, 0, 204));
+            text-shadow: 3px 1px 2px white;
+            margin-top:12px;
+        }
+        .para3{
+            transform: translateY(-460px);
+            font-style: italic;
+        }
+        #python{
+            position: relative;
+            bottom:800px;
+            left:50px;
+        }
+        .python:hover{
+            font-style:oblique;
+            font-size:xx-large;
+        }
+        #pythan{
+            border:2px solid blue;
+            box-shadow: 2px 2px 2px 4px blue;
+            transform: translateY(-790px);
+            display:flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        .Electrical{
+            transform: translateY(-780px);
+            background-image: linear-gradient(to top right,rgba(170, 255, 0, 0.941),rgba(157, 0, 255, 0.777));
+            text-shadow: 3px 1px 2px green;
+            margin-top:12px;
+        }
+        .Electrical:hover{
+            font-style:oblique;
+            font-size:xx-large;
+        }
+        .para4{
+            transform: translateY(-470px);
+            font-style:italic;
+        }
+        #Electrical{
+            transform:translateY(-800px);
+        }
+        #Electrical:hover,#python:hover,#web:hover,#pto1:hover{
+            width:500px;
+        }
+        .box,.box1{
+            border:2.8px solid blue;
+            width:400px;
+            height:150px;
+            margin-right:40px;
+            margin-top:20px;
+            display: inline-block;
+            transform: translateY(-800px);
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            background-image: repeating-linear-gradient(to top right,rgba(0, 0, 255, 0.745),white,violet);
+        } 
+        .logo{
+            border:2px solid black;
+            border-radius: 50%;
+            width:80px;
+            height:80px;
+            position: relative;
+            top:5px;
+            right:150px;
+
+        }
+        .logos{
+            position: relative;
+            right:150px;
+            top:5px;
+            border:2px solid black;
+            border-radius: 50%;
+            width:80px;
+            height: 80px;
+        }
+        .mat{
+            position: relative;
+            bottom: 80px;
+            left:6px;
+        }
+        .pcb{
+            position: relative;
+            bottom: 80px;
+            left:20px;
+        }
+        .embedded{
+            position: relative;
+            bottom:80px;
+            right:20px;
+            font-size: 20px;
+        }
+        .machine{
+            position: relative;
+            bottom: 80px;
+            left:-20px;
+        }
+        #pre1{
+            position: relative;
+            bottom: 1160px;
+            right:290px;
+        }
+        #pre2{
+            position: relative;
+            bottom: 1235px;
+            left:150px;
+        }
+        #pre3{
+            position: relative;
+            bottom: 1145px;
+            left:120px;
+        }
+        #pre4{
+            position:relative;
+            bottom:1240px;
+            right:370px;
+        }
+        .Created{
+            text-shadow: 2px 2px 2px red;
+            transform: translateY(-1000px);
+            padding-bottom: 0px;
+            
+        }
+        h2{
+            margin-top: 0px;
+        }
+        #created{
+            transform: translateY(300px);
+        }
+        .line{
+            transform: translateY(150px);
+        }
+        #l1{
+            display: inline;
+            font-weight: bold;
+            padding-left:5px;
+            position: relative;
+            left:650px;
+            bottom:50px;
+            font-size:12px;
+        }
+        #enroll,a:hover{
+            color:red;
+            transform: translateY(20px);
+        }
+        #footer{
+            display: inline-block;
+            width:1000px;
+            height:250px;
+            background-color:rgb(0, 0, 0);
+            transform: translateY(-1230px);
+            color:white;
+        }
+        #foot{
+            width:150px;
+            height:30px;
+            display: block;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 1px;
+            box-shadow: 4px 3px 2px blue;
+            animation-name: left;
+        }
+        #foot:hover{
+            transform: scale(1.1);
+        }
+        #l1{
+            color:black;
+            font-size: 12px;
+        }
+        #l1:hover{
+            color:blue;
+            font-size: 14px;
+        }
+        li{
+            padding:10px;
+            color:chartreuse;
+            display: flex;
+            text-align:start;
+        }
+        #enroll{
+            color:white;
+            text-shadow: 1px 2px 3px white;
+            font-size:larger; 
+            width:100px;
+        }
+        #u2{
+            transform: translate(360px,-190px);
+        }
+        #u3{
+            transform: translate(740px,-383px);
+        }
+        #fa1{
+            transform: translate(-545px,-495px);
+        }
+        #fa2{
+            transform: translate(-570px,-530px);
+        }
+        #fa3{
+            transform: translate(-590px,-440px);
+        }
+        #fa4{
+            transform: translate(-230px,-535px);
+        }
+        #fa5{
+            transform: translate(-250px,-460px);
+        }
+        #fa6{
+            transform: translate(-274px,-420px);
+        }
+        #fa7{
+            transform: translate(-300px,-495px);
+        }
+        #by{
+            transform: translateY(615px);
+            text-align: center;
+            color:blue;
+        }
+        #created{
+            transform: translateY(920px);
+            text-align: center;
+            color:blue;
+        }
+        li:hover{
+            font-size:20px;
+            color:rgba(255, 68, 0, 0.995);
+        }
+        #fafa:hover{
+            color:red;
+        }
+        #home{
+            color:black;
+            text-decoration-line: none;
+        }
+        #home:hover,a{
+            color:blue;
+            text-decoration-line: none;
+        }
+        #cap{
+            transform: translateX(500px);   
+        }
+    </style>
+</head>
+<body>
+        <nav id="logo">
+            <i class="fa fa-bars" style="font-size:24px"></i>
+    <img id="item2"
+    src="login-360-new-logo-2.png">
+    <ul>
+        <li id="l1"><a id="home" href="">HOME</li></a>
+        <li id="l1"><a id="home" href="#item7">MENU</li></a>
+        <li id="l1"><a id="home" href="#footer">ABOUT</li></a>
+        <li id="l1"><a id="home" href="file:///C:/Users/ELCOT/Desktop/LOGIN%20360%20COACHING/css%20login%20form.html?">LOGIN</li></a>
+    </ul>
+    <input id="search" type="search" placeholder="Search">
+        </nav>
+    <div>
+    <img class="one"
+    src="1233.jpg">
+
+    <h1 class="two">Software training<br>Institute in Chennai</h1>
+
+    <p id="item1">Login360 provides the best software training <br>courses in Chennai with 100% placement support<br> for all our students. Here we teach trending<br>technologies with real-time projects.</p>
+
+    <button>
+    <a href ="file:///C:/Users/ELCOT/Desktop/LOGIN%20360%20COACHING/08.11.23.html">Enroll Now</button></a></div>
+
+    <h4>ABOUT US</h4>
+
+    <h1 class="three"><marquee>No. 1 Software (IT) Training Institute in Chennai</marquee></h1>
+
+    <hr id="item6">
+
+    <p>Our team login provides the best teaching cultures to all our trainees through our Software Training Institute in Chennai with the Supreme infrastructure. Here in Login we mainly cornerstone on students welfare and make them evident in the IT field through our immense training techniques with excellent lab facilities. Our training programs rely mostly on the technical basis and innovative ideas which help them exceed in all aspects fulfilling the IT needs.</p>
+    
+    <p>To help them understand the better working culture our Software Institute provides programs conducted by IT professionals who share their real time working experience to indulge practical knowledge among students.</p>
+
+    <p>Login also Conducts Mock interviews to find out the lacking Skills and helps them to improve even better to hit the Interviews.</p>
+
+    <button class="four">Learn More</button>
+
+    <div class="five">
+        <h1 class="six">1250+</h1>
+        <h2 class="seven">Satisfied Learners</h2>
+        <h3 class="eight">For the betterment in knowledge providing, we admit only few members per batch to get fully focused and to interact with them.</h3>
+    </div>
+
+        <div class="nine">
+            <h1 class="six">1250+</h1>
+            <h2 class="seven">Satisfied Learners</h2>
+            <h3 class="eight">For the betterment in knowledge providing, we admit only few members per batch to get fully focused and to interact with them.</h3>
+        </div>
+
+        <div class="ten">
+            <h1 class="six">1250+</h1>
+            <h2 class="seven">Satisfied Learners</h2>
+            <h3 class="eight">For the betterment in knowledge providing, we admit only few members per batch to get fully focused and to interact with them.</h3>
+        </div>  
+
+        <div class="eleven">
+            <h1 class="six">1250+</h1>
+            <h2 class="seven">Satisfied Learners</h2>
+            <h3 class="eight">For the betterment in knowledge providing, we admit only few members per batch to get fully focused and to interact with them.</h3>
+            <h1 id="item7">Why Login360?</h1></div>
+        <center>
+        <span>
+            <img id="item8" src="IT-Profession-trainee-icons.png">
+            <img id="item8" src="Focus-Every-Trainee-icons.png">
+            <img id="item8" src="Mock-Interviews-icons.png"></span> 
+            <div id="item3"><b>
+                IT Professionals As Trainers<br></b>
+                We help you gain professional attire through our expertise and experience with enhancing technology learning.
+            </div>
+
+            <div id="item4"><b>
+                Focus On Every Trainee<br></b>
+                For the betterment in knowledge providing, we admit only few members per batch to get fully focused.
+            </div>
+
+            <div id="item5"><b>   
+                Workstation Support<br></b>
+                With the most out ranging infrastructure and lab facilities, we provide you support and hands on experience.
+            </b>
+            </div>
+
+            <div>
+                <h2 class="cloud"><marquee>Cloud&Devops Training</marquee></h2>
+                <p class="para1">Login360 DevOps Training in Chennai will make you a master in DevOps Tools Such as GitHub, Jenkins, Buddy, Cucumber, Docker, Maven, Teamcity, Nagios, and Ansible with Live Projects.</p>
+            </div>
+
+                <img id="pto1" src="login360-left-485x369xc.png">
+            <div id="agulars">
+                <img id="pto2" src="aws-logo.png">
+                <img id="pto3" src="ma-logo.png">
+                <img id="pto4" src="gcp-logo.png">
+            </div>
+                <h2 class="web"><marquee>Web Application & RPA Training</marquee></h2>
+                <p class="para2">RPA Training course is curated by industry experts and helps you prepare for the UiPath’s RPA Developer Advanced Certification Exam so that you can drive RPA initiatives in your organization.</p>
+                <img id="web" src="login360-right-485x369xc.png">
+            <div id="agular">
+                <img src="agular-logo.png">
+                <img src="php-logo.png">
+                <img src="ma-logo.png">
+            </div>
+
+            <div>
+                <h2 class="python"><marquee>Python Training</marquee></h2>
+                <p class="para3">With this complete course, you will become an expert in the core fundamentals of programming, Data Structures, Algorithms, and their functioning with one of the most popular programming languages, Python.</p>
+                <img id="python"src="pythan.png">
+            </div>
+
+            <div id="pythan">
+                <img src="aws-logo.png">
+                <img src="ma-logo.png">
+                <img src="php-logo.png">
+            </div>
+
+            <div class="space">
+                <h2 class="Electrical"><marquee>Electrical & Electronics Training</marquee></h2>
+                <p class="para4">In addition to providing main training such as Angular, PHP, etc Login360 delivers other courses and training such as Comptia/Routing & Switching, Ethical hacking, digital Marketing, and Blockchain Training.</p>
+                <img id="Electrical"src="login360-right-2-1-485x369xc.png">
+            </div>
+
+            <div class="box">
+                <img class="logos" src="PCB-Designing.png">
+                <h3 class="pcb">PCB Design / Orcad Training</h3  >
+            </div>
+
+            <div class="box">
+                <img class="logos" src="MATLAB-For-Electronics.png">
+                <h3 class="mat">MATLAB For Electronics</h3>
+            </div>
+
+            <div class="box1">
+                <img class="logos" src="Advanced-Embedded-System.png">
+                <h3 class="embedded">Embedded Systems</h3>
+            </div>
+
+            <div class="box1">
+                <img 
+                    class="logo"src="ml-logo.jpg">
+                <h3 class="machine">Machine Learning</h3>
+            </div>
+                <hr>
+                <h1 id="thank">THANK YOU</h1>
+                <b>
+                <pre id="pre1">             In this cours students
+                   will learn how to Design
+                       and Analyse electrical 
+                             and Electronic circuits.</pre></b>
+
+                <b>
+                <pre id="pre2">                    In this cours students
+                           will learn how to Design
+                               and Analyse electrical 
+                                     and Electronic circuits.
+                </pre></b>
+
+                <b>
+                <pre id="pre3">                             In this cours students
+                                   will learn how to Design
+                                       and Analyse electrical 
+                                             and Electronic circuits.
+                </pre></b>
+
+                <b>
+                <pre id="pre4">                                   In this cours students
+                                           will learn how to Design
+                                               and Analyse electrical 
+                                                     and Electronic circuits.
+                </pre></b></center>
+                <div id="footer">
+                    <img id="foot"
+                         src="login-360-new-logo-2.png">
+                         <ul id="u1">
+                            <a href="">Courses</a>
+                            <li>Web developement</li>
+                            <li>Software testing</li>
+                            <li>Full stack web development</li>
+                            <li>UI/UX developement</li>
+                         </ul>
+                         <ul id="u2">
+                            <a href="">About us</a>
+                            <li>+91-63 85 87 28 10</li>
+                            <li>enquiry@login360.in</li>
+                            <li>No-06, Ground Floor, <br>5th Main Road,Vijaya Nagar<br>
+                                Velachery, Chennai – 600 042.</li>
+                         </ul>
+                         <ul id="u3">
+                            <a href="">Follow us</a>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Whats app</li>
+                            <li>Twitter</li>
+                         </ul>
+                         <span id="fafa">
+                         <i id="fa1"
+                          class="fa fa-envelope-o" style="font-size:20px;color:white"></i>
+                         <i id="fa2" 
+                         class="fa fa-phone" style="font-size:25px;color:white"></i>
+                         <i id="fa3"
+                          class="fa fa-map-marker" style="font-size:25px;color:white"></i>
+                         <i id="fa4"
+                          class="fa fa-facebook-f" style="font-size:25px;color:white"></i>
+                         <i id="fa5"
+                          class="fa fa-whatsapp" style="font-size:25px;color:white"></i>
+                         <i id="fa6"
+                         class="fa fa-twitter-square" style="font-size:25px;color:white"></i>
+                         <i id="fa7"
+                         class="fa fa-instagram" style="font-size:25px;color:white"></i>
+                         </span>
+                <div class="Created">
+                    <h2 id="by">Created By</h2>
+                     <p id="created">Dineshkumar</p>
+                </div>
+                    <hr class="line">
+</body>
+</html>
